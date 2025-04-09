@@ -1,0 +1,9 @@
+---
+- name: Webserver deployment and configuration
+  hosts: webservers
+  become: yes
+  vars:
+    env: stag
+  roles:
+    - webserver
+
